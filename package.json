@@ -1,0 +1,27 @@
+{
+  "name": "rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "@babel/preset-env": "^7.4.4",
+    "rollup": "^1.11.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "testcafe": "^1.3.1",
+    "testcafe-browser-provider-saucelabs": "^1.7.0",
+    "testcafe-reporter-xunit": "^2.1.0",
+    "uglify-js": "^3.5.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:es:watch": "set NODE_ENV=es&& rollup -w -c ./scripts/esm-build.js",
+    "build:umd:watch": "set NODE_ENV=umd&& rollup -w -c ./scripts/umd-build.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
